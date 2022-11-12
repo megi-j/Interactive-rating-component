@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#active {
+    background-color: #7C8798;
+    color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+    width: 51px;
+    height: 51px;
+    background-color: #262E38;  
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%;
+    border: none;
+    color: #7C8798;
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn:hover {
+    background-color: #FC7614;
+    color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.card {
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-2{
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.star-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #262E38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Overpass";
+}
+.text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #969FAD;
+    font-family: "Overpass";
+    line-height: 24px;
+}
+.button-box{
+    display: flex;
+    justify-content: space-between;
+}
+.submit-button {
+    width: 341px;
+    height: 45px;
+    background-color: #FC7614;
+    color: #fff;
+    border-radius: 22.5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "Overpass";
+    cursor: pointer;
+}
+.phone-img {
+    width: 162px;
+    height: 108px;
+}
+.result-box {
+    width: 193px;
+    height: 32px;
+    background-color: #262E38;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-box p{
+    color: #FC7614;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Overpass";
 }
