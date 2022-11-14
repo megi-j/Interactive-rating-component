@@ -1,24 +1,25 @@
 import star from './images/icon-star.svg'
 import Button from './Button'
+import styles from './App.module.css'
 
+let title = "How did we do?";
+let text = "Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!"
 
 export default function Card(props){
-    
+    let rateNumbers = [1, 2, 3, 4, 5]
     return(
-        <main className='card'>
-           <div className='star-box'>
+        <main className={styles.card}>
+           <div className={styles.starBox}>
                <img src={star} alt="star" />
            </div>
-           <h1 className='title'>How did we do?</h1>
-           <p className='text'>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-           <div className='button-box'>
-                <Button number="1" click = {(e)=>props.handleChange(e,1)} />
-                <Button number="2" click = {(e)=>props.handleChange(e,2)} />
-                <Button number="3" click = {(e)=>props.handleChange(e,3)} />
-                <Button number="4" click = {(e)=>props.handleChange(e,4)} />
-                <Button number="5" click = {(e)=>props.handleChange(e,5)} />
+           <h1 className={styles.title}>{title}</h1>
+           <p className={styles.text}>{text}</p>
+           <div className={styles.buttonBox}>
+            {rateNumbers.map((num)=>{
+                return <Button number = {num} click = {()=>props.handleChange(num)} id={props.rate == num ? `${styles.active}` : ""} />
+            })}
            </div>
-           <button onClick={props.changeRate} className="submit-button">SUBMIT</button>
+           <button onClick={props.changeRate} className={styles.submitButton}>SUBMIT</button>
           
         </main>
     )

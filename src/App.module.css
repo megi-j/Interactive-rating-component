@@ -37,7 +37,7 @@
     justify-content: space-between;
     flex-direction: column;
 }
-.card-2{
+.card2{
     width: 412px;
     height: 416px;
     border-radius: 30px;
@@ -48,7 +48,7 @@
     flex-direction: column;
     align-items: center;
 }
-.star-box {
+.starBox {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -70,11 +70,11 @@
     font-family: "Overpass";
     line-height: 24px;
 }
-.button-box{
+.buttonBox{
     display: flex;
     justify-content: space-between;
 }
-.submit-button {
+.submitButton {
     width: 341px;
     height: 45px;
     background-color: #FC7614;
@@ -85,12 +85,17 @@
     letter-spacing: 2px;
     font-family: "Overpass";
     cursor: pointer;
+    border: none;
 }
-.phone-img {
+.submitButton:hover {
+    background-color: #fff;
+    color: #FC7614;
+}
+.phoneImg {
     width: 162px;
     height: 108px;
 }
-.result-box {
+.resultBox {
     width: 193px;
     height: 32px;
     background-color: #262E38;
@@ -99,7 +104,7 @@
     justify-content: center;
     align-items: center;
 }
-.result-box p{
+.resultBox p{
     color: #FC7614;
     font-weight: 400;
     font-size: 15px;
