@@ -1,0 +1,59 @@
+.card {
+    max-width: 412px;
+    width: 100%;
+    height: 416px;
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.starBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #262E38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Overpass";
+}
+.text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #969FAD;
+    font-family: "Overpass";
+    line-height: 24px;
+}
+.buttonBox{
+    display: flex;
+    justify-content: space-between;
+}
+.submitButton {
+    max-width: 341px;
+    width: 100%;
+    height: 45px;
+    background-color: #FC7614;
+    color: #fff;
+    border-radius: 22.5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "Overpass";
+    cursor: pointer;
+    border: none;
+}
+.submitButton:hover {
+    background-color: #fff;
+    color: #FC7614;
+}
+#active {
+    background-color: #7C8798;
+    color: #fff;
+}

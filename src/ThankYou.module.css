@@ -1,0 +1,44 @@
+.card2{
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phoneImg {
+    width: 162px;
+    height: 108px;
+}
+.resultBox {
+    width: 193px;
+    height: 32px;
+    background-color: #262E38;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultBox p{
+    color: #FC7614;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Overpass";
+}
+.title {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Overpass";
+}
+.text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #969FAD;
+    font-family: "Overpass";
+    line-height: 24px;
+}

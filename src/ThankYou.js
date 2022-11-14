@@ -1,5 +1,5 @@
 import phone from "./images/illustration-thank-you.svg"
-import styles from './App.module.css'
+import styles from './ThankYou.module.css'
 
 export default function ThankYou(props){
     return (
